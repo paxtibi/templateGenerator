@@ -1,0 +1,6 @@
+{
+  "class-name": "a-class-name",
+  "plugin-name":"a-plugin-name",
+  "selector":"role='app'",
+  "file-prefix":"app."
+}

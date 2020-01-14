@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1521065961"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -Xg -l -vewnhibq -Fi/media/sf_Scambio/templateGen/lib/x86_64-linux -Fu/media/sf_Scambio/templateGen/src -Fu/usr/lib64/lazarus/components/lazutils/lib/x86_64-linux -Fu/usr/lib64/lazarus/packager/units/x86_64-linux -Fu/media/sf_Scambio/templateGen/pck/ -FU/media/sf_Scambio/templateGen/lib/x86_64-linux/ -FE/media/sf_Scambio/templateGen/bin/x86_64-linux/ tmplGen.lpr"/>
+</CONFIG>

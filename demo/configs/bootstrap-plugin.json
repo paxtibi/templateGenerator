@@ -1,0 +1,7 @@
+{
+  "projectname":"BootstrapApplication",
+  "sourcepath" : "templates/jquery",
+  "targetpath" : "output",
+  "startDelimiter" : "<%",
+  "endDelimiter" : "%>"
+}

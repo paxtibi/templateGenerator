@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="19">
+      <Unit0>
+        <Filename Value="tmplGen.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="153"/>
+        <CursorPos Y="169"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\src\om.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="56" Y="23"/>
+        <UsageCount Value="29"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\bin\i386-win32\prova.json"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="28" Y="11"/>
+        <UsageCount Value="23"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\programmi\lazarus-1.8-32\fpc\3.0.4\source\packages\fcl-base\src\fptemplate.pp"/>
+        <UnitName Value="fpTemplate"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="30"/>
+        <CursorPos X="3" Y="44"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\bin\i386-win32\widget.json"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="34" Y="4"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\programmi\lazarus-1.8-32\fpc\3.0.4\source\packages\fcl-json\src\fpjsonrtti.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="108"/>
+        <CursorPos X="3" Y="119"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\bin\i386-win32\widgets\service.json"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="38" Y="16"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\programmi\lazarus-1.8-32\fpc\3.0.4\source\packages\fcl-json\src\jsonparser.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="17"/>
+        <CursorPos X="3" Y="28"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\programmi\lazarus-1.8-32\fpc\3.0.4\source\packages\fcl-json\src\jsonscanner.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos X="3" Y="53"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\programmi\lazarus-1.8-32\components\lazutils\lazfileutils.pas"/>
+        <UnitName Value="LazFileUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="166"/>
+        <CursorPos X="20" Y="168"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\programmi\lazarus-1.8-32\components\lazutils\lazutils.pas"/>
+        <UnitName Value="LazUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="35" Y="29"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\programmi\lazarus-1.8-32\components\lazutils\fileutil.pas"/>
+        <UnitName Value="FileUtil"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="182"/>
+        <CursorPos X="70" Y="193"/>
+        <UsageCount Value="11"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\programmi\lazarus-1.8-32\components\lazutils\fileutil.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1067"/>
+        <CursorPos Y="1079"/>
+        <UsageCount Value="11"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="E:\home\marco.roin\workspace\4.0.0\IPTBTC\twobeat-components\twobeat-presentation\utils\templates\search\MassiveActivitySearch.scss"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="21" Y="3"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="E:\home\marco.roin\workspace\4.0.0\IPTBTC\twobeat-components\twobeat-presentation\utils\templates\search\MassiveActivitySearch.pagecontroller.js"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="38"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="JScript"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="E:\home\marco.roin\workspace\4.0.0\IPTBTC\twobeat-components\twobeat-presentation\utils\templates\search\massiveactivitysearch.definition.js"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="25"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="JScript"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="E:\home\marco.roin\workspace\4.0.0\IPTBTC\twobeat-components\twobeat-presentation\utils\templates\search\MassiveActivitySearch.module.js"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="48" Y="9"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="JScript"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="E:\home\marco.roin\workspace\4.0.0\IPTBTC\twobeat-components\twobeat-presentation\utils\templates\service\Service.js"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="4"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="JScript"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\programmi\lazarus-1.8-32\fpc\3.0.4\source\packages\fcl-json\src\fpjson.pp"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="454"/>
+        <CursorPos X="3" Y="465"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit18>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="84" TopLine="80"/>
+      </Position1>
+      <Position2>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="85" TopLine="80"/>
+      </Position2>
+      <Position3>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="91" TopLine="80"/>
+      </Position3>
+      <Position4>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="92" TopLine="80"/>
+      </Position4>
+      <Position5>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="93" TopLine="80"/>
+      </Position5>
+      <Position6>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="95" TopLine="81"/>
+      </Position6>
+      <Position7>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="96" TopLine="82"/>
+      </Position7>
+      <Position8>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="98" TopLine="84"/>
+      </Position8>
+      <Position9>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="195" Column="39" TopLine="162"/>
+      </Position9>
+      <Position10>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="28" Column="25" TopLine="19"/>
+      </Position10>
+      <Position11>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="92" Column="46" TopLine="84"/>
+      </Position11>
+      <Position12>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="82" TopLine="71"/>
+      </Position12>
+      <Position13>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="83" TopLine="71"/>
+      </Position13>
+      <Position14>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="84" TopLine="71"/>
+      </Position14>
+      <Position15>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="86" TopLine="71"/>
+      </Position15>
+      <Position16>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="95" TopLine="87"/>
+      </Position16>
+      <Position17>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="96" TopLine="87"/>
+      </Position17>
+      <Position18>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="82" TopLine="74"/>
+      </Position18>
+      <Position19>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="83" TopLine="74"/>
+      </Position19>
+      <Position20>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="84" TopLine="74"/>
+      </Position20>
+      <Position21>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="86" Column="18" TopLine="75"/>
+      </Position21>
+      <Position22>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="27" Column="15" TopLine="20"/>
+      </Position22>
+      <Position23>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="65" Column="38" TopLine="53"/>
+      </Position23>
+      <Position24>
+        <Filename Value="tmplGen.lpr"/>
+      </Position24>
+      <Position25>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="64" Column="41" TopLine="50"/>
+      </Position25>
+      <Position26>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="65" Column="57" TopLine="51"/>
+      </Position26>
+      <Position27>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="155" Column="48" TopLine="142"/>
+      </Position27>
+      <Position28>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="31" Column="15" TopLine="24"/>
+      </Position28>
+      <Position29>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="131" Column="5" TopLine="125"/>
+      </Position29>
+      <Position30>
+        <Filename Value="tmplGen.lpr"/>
+        <Caret Line="31" Column="15" TopLine="23"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <Watches Count="3">
+      <Item1>
+        <Expression Value="parameter"/>
+      </Item1>
+      <Item2>
+        <Expression Value="pkey"/>
+      </Item2>
+      <Item3>
+        <Expression Value="pValue"/>
+      </Item3>
+    </Watches>
+  </Debugging>
+</CONFIG>
