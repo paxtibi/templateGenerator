@@ -53,16 +53,17 @@ type
     targetFileName: string;
   begin
     writeln('Load ', inputFile);
-    Template := TFPTemplate.Create;
+    Template          := TFPTemplate.Create;
     Template.FileName := inputFile;
     Template.AllowTagParams := True;
     Template.OnGetParam := @GetParam;
     Template.OnReplaceTag := @ReplaceTag;
     Template.StartDelimiter := FProject.startDelimiter;
     Template.EndDelimiter := FProject.endDelimiter;
-    OutputString := Template.GetContent;
+    OutputString      := Template.GetContent;
     ForceDirectories(FProject.targetpath + DirectorySeparator);
     targetFileName := ExpandFileName(FProject.targetpath + DirectorySeparator + FJSONData.FindPath('file-prefix').Value + ExtractFileName(inputFile));
+    ForceDirectories(ExtractFilePath(targetFileName));
     Writeln('Write : ', targetFileName);
     FileStream := TFileStream.Create(targetFileName, fmCreate);
     FileStream.Write(OutputString[1], Length(OutputString));
@@ -80,15 +81,15 @@ type
       idx := 0;
       repeat
         parameter := ParamStr(idx);
-        pIdx := Pos('=', parameter);
+        pIdx      := Pos('=', parameter);
         if pIdx > 0 then
         begin
-          pkey := Copy(parameter, 1, pIdx - 1);
+          pkey   := Copy(parameter, 1, pIdx - 1);
           pValue := Copy(parameter, pIdx + 1, length(parameter));
           Writeln('add ', pkey, ' as ', pvalue);
           (target as TJSONObject).Add(pkey, pvalue);
         end;
-        inc(idx);
+        Inc(idx);
       until idx > ParamCount;
     end;
   end;
@@ -99,8 +100,8 @@ type
     parser: TJSONParser;
   begin
     FileStream := TFileStream.Create(GetOptionValue('j', 'json'), fmOpenRead);
-    parser := TJSONParser.Create(FileStream, [joUTF8, joStrict, joComments, joIgnoreTrailingComma]);
-    target := parser.Parse;
+    parser     := TJSONParser.Create(FileStream, [joUTF8, joStrict, joComments, joIgnoreTrailingComma]);
+    target     := parser.Parse;
     FreeAndNil(parser);
     FreeAndNil(FileStream);
   end;
@@ -112,14 +113,24 @@ type
     jsonString: TJSONStringType;
     fileName: string;
   begin
-    fileName := ExpandFileName(GetOptionValue('p', 'project'));
-    FileStream := TFileStream.Create(fileName, fmOpenRead);
-    SetLength(jsonString, FileStream.Size);
-    FileStream.Read(jsonString[1], FileStream.Size);
-    ds := TJSONDeStreamer.Create(self);
-    target := TProject.Create;
-    ds.JSONToObject(jsonString, target);
-    FreeAndNil(ds);
+
+    try
+      fileName := ExpandFileName(GetOptionValue('p', 'project'));
+      Writeln(fileName);
+      FileStream := TFileStream.Create(fileName, fmOpenRead);
+      SetLength(jsonString, FileStream.Size);
+      FileStream.Read(jsonString[1], FileStream.Size);
+      ds     := TJSONDeStreamer.Create(self);
+      target := TProject.Create;
+      ds.JSONToObject(jsonString, target);
+      FreeAndNil(ds);
+    except
+      on E: Exception do
+      begin
+        Writeln(E.Message);
+        raise;
+      end;
+    end;
   end;
 
   procedure TTemplateGenerator.DoRun;
@@ -166,10 +177,16 @@ type
       Terminate;
       exit;
     end;
-    sourceFolder := StringReplace(expandFileName(ExtractFilePath(GetOptionValue('p', 'project')) + FProject.sourcepath), DirectorySeparator + DirectorySeparator, DirectorySeparator, [rfReplaceAll]);
+    sourceFolder        := StringReplace(expandFileName(ExtractFilePath(GetOptionValue('p', 'project')) + FProject.sourcepath), DirectorySeparator + DirectorySeparator, DirectorySeparator, [rfReplaceAll]);
     FProject.sourcepath := sourceFolder;
     Writeln('Start generate ', FProject.projectname);
     Writeln('Scan folder : ', sourceFolder);
+    if not DirectoryExists(FProject.sourcepath) then
+    begin
+      WriteLn('Path not exists ', sourceFolder);
+      Terminate;
+      Exit;
+    end;
     fs := TFileSearcher.Create();
     fs.OnFileFound := @ProcessFile;
     fs.Search(FProject.sourcepath, '*.*', True, False);
@@ -219,7 +236,7 @@ var
 {$R *.res}
 
 begin
-  Application := TTemplateGenerator.Create(nil);
+  Application       := TTemplateGenerator.Create(nil);
   Application.Title := 'templateGenerator';
   Application.Run;
   Application.Free;

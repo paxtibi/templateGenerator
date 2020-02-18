@@ -5,7 +5,7 @@ unit <%type-name%>TestCase;
 interface
 
 uses
-  Classes, SysUtils, fpcunit, testutils, testregistry, paxtypes,<%type-name%>Type;
+  Classes, SysUtils, fpcunit, testutils, testregistry, paxtypes;
 
 type
 

@@ -1,0 +1,2 @@
+set executable=..\bin\x86_64-win64\tmplGen.exe
+%executable% -p .\configs\bootstrap-plugin.json -f "hello\hello." class-name=Hello plugin-name=saluta version=1.0.0 selector=["role"="hello-guy"] template-selector="role"="hello-guy" targetpath=.

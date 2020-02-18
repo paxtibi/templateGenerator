@@ -1,5 +1,5 @@
 {
-  "projectname":"BootstrapApplication",
+  "projectname":"Freepascal Native Wrapper",
   "sourcepath" : "../templates/pascal/numerical",
   "targetpath" : "./output",
   "startDelimiter" : "<%",
