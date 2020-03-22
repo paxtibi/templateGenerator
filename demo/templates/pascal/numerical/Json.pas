@@ -21,7 +21,7 @@ var
   value : I<%type-name%>;
 begin
   Result := False;
-  if (info^.PropType^.Kind = tkInterface) and  (info^.PropType^.Name = 'IDouble') and (node <> nil) then
+  if (info^.PropType^.Kind = tkInterface) and  (info^.PropType^.Name = 'I<%type-name%>') and (node <> nil) then
   begin
     try
       value := GetFloatProp(AObject, Info);
